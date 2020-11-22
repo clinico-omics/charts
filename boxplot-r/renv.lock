@@ -1,10 +1,10 @@
 {
   "R": {
-    "Version": "3.6.3",
+    "Version": "3.6.1",
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://mirrors.tongji.edu.cn/CRAN"
+        "URL": "https://mirrors.tuna.tsinghua.edu.cn/CRAN"
       }
     ]
   },
@@ -734,7 +734,7 @@
       "Package": "renv",
       "Version": "0.12.0",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": null,
       "Hash": "7340c71f46a0fd16506cfa804e224e44"
     },
     "rio": {
