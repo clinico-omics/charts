@@ -2,58 +2,6 @@
   "formMode": "single",
   "fields": [
     {
-      "tmplType": "input",
-      "type": "string",
-      "label": "Data File",
-      "name": "dataFile",
-      "question": "where is the data file?",
-      "placeholder": "Where is the data file?",
-      "model": "dataFile",
-      "disabled": false,
-      "readOnly": true,
-      "config": {
-        "rules": [
-          {
-            "type": "string",
-            "required": true,
-            "message": "Please input a data file."
-          }
-        ]
-      }
-    },
-    {
-      "tmplType": "select",
-      "type": "string",
-      "label": "Data Type",
-      "name": "dataType",
-      "question": "which is the data type?",
-      "placeholder": "Which is the data type?",
-      "model": "dataType",
-      "mode": "default",
-      "options": [
-        {
-          "value": "csv",
-          "label": "Comma-Separated Values (csv)"
-        },
-        {
-          "value": "rds",
-          "label": "RDS"
-        }
-      ],
-      "disabled": true,
-      "readOnly": true,
-      "config": {
-        "initialValue": "csv",
-        "rules": [
-          {
-            "type": "string",
-            "required": true,
-            "message": "Please input a data type."
-          }
-        ]
-      }
-    },
-    {
       "tmplType": "select",
       "type": "string",
       "label": "xAxis",
