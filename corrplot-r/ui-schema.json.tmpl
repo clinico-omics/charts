@@ -1,0 +1,105 @@
+{
+  "formMode": "single",
+  "fields": [
+    {
+      "tmplType": "select",
+      "type": "string",
+      "label": "corrVars",
+      "name": "corrVars",
+      "question": "column name list, shoud be split by comma",
+      "placeholder": "Which are the fields for corrVars?",
+      "model": "corrVars",
+      "mode": "multiple",
+      "options": {{ columnOptions|safe }},
+      "disabled": false,
+      "readOnly": false,
+      "config": {
+        "rules": []
+      }
+    },
+    {
+      "tmplType": "select",
+      "type": "string",
+      "label": "corrMethod",
+      "name": "corrMethod",
+      "question": "The visualization method of correlation matrix to be used. Allowed values are "square" (default), "circle".",
+      "placeholder": "Select a correlation method?",
+      "model": "corrMethod",
+      "mode": "default",
+      "options": ["square", "circle"],
+      "disabled": false,
+      "readOnly": false,
+      "config": {
+        "initialValue": "square",
+        "rules": []
+      }
+    },
+    {
+      "tmplType": "select",
+      "type": "string",
+      "label": "corrType",
+      "name": "corrType",
+      "question": "full (default), lower or upper display.",
+      "placeholder": "Which is the corrType?",
+      "model": "corrType",
+      "mode": "default",
+      "options": ["full", "lower", "upper"],
+      "disabled": false,
+      "readOnly": false,
+      "config": {
+        "initialValue": "full",
+        "rules": []
+      }
+    },
+    {
+      "tmplType": "select",
+      "type": "string",
+      "label": "hcOrder",
+      "name": "hcOrder",
+      "question": "True or False, If TRUE, correlation matrix will be hc.ordered using hclust function.",
+      "placeholder": "Which is the hcOrder?",
+      "model": "hcOrder",
+      "mode": "default",
+      "options": ["True", "False"],
+      "disabled": false,
+      "readOnly": false,
+      "config": {
+        "initialValue": "True",
+        "rules": []
+      }
+    },
+    {
+      "tmplType": "select",
+      "type": "string",
+      "label": "hcMethod",
+      "name": "hcMethod",
+      "question": "The agglomeration method to be used in hclust (see ?hclust).",
+      "placeholder": "Which is the hcMethod?",
+      "model": "hcMethod",
+      "mode": "default",
+      "options": ["ward.D", "ward.D2", "single", "complete", "average", "mcquitty", "median", "centroid"],
+      "disabled": false,
+      "readOnly": false,
+      "config": {
+        "initialValue": "complete",
+        "rules": []
+      }
+    },
+    {
+      "tmplType": "actions",
+      "buttons": [
+        {
+          "type": "cancel",
+          "buttonType": "default",
+          "buttonLabel": "Cancel"
+        },
+        {
+          "type": "submit",
+          "buttonType": "primary",
+          "buttonLabel": "Enter",
+          "validate": true
+        }
+      ]
+    }
+  ]
+}
